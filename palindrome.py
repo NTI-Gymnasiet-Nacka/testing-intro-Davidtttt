@@ -1,8 +1,9 @@
 # Palindrome
 
 def main():
-    # Skriv din lösning här nedan. Byt ut "pass" mot din kod.
-    pass
+    word = input()
+    cleaned_text = ''.join(char.lower() for char in word if char.isalnum())
+    print(cleaned_text == cleaned_text[::-1])
 
 if __name__ == "__main__":
     main()

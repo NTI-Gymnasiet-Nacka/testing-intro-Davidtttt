@@ -1,8 +1,12 @@
 # Största skillnad
 
+import numbers
+
+
 def main():
-    # Skriv din lösning här nedan. Byt ut "pass" mot din kod.
-    pass
+    input_string = input("Ange tal separererade med kommatecken")
+    numbers = [int(num.strip()) for num in input_string.split(',')]
+    print(max(numbers) - min(numbers))
 
 if __name__ == "__main__":
     main()

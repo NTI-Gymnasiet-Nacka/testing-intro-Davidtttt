@@ -1,7 +1,9 @@
 # Vokalräkning
 
 def main():
-    # Skriv din lösning här nedan. Byt ut "pass" mot din kod.
+    string = input()
+    vokal = "aeiouyåäöAEIOUYÅÄÖ"
+    print(sum(1 for char in string if char in vokal))
     pass
 
 if __name__ == "__main__":
